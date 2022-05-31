@@ -31,6 +31,8 @@ namespace FiveM_Launcher
         {
             this.btnEntrar = new System.Windows.Forms.Button();
             this.nplayers = new System.Windows.Forms.Label();
+            this.totalplayers = new System.Windows.Forms.Label();
+            this.btnDiscordServer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEntrar
@@ -46,17 +48,38 @@ namespace FiveM_Launcher
             // nplayers
             // 
             this.nplayers.AutoSize = true;
-            this.nplayers.Location = new System.Drawing.Point(297, 73);
+            this.nplayers.Location = new System.Drawing.Point(104, 41);
             this.nplayers.Name = "nplayers";
             this.nplayers.Size = new System.Drawing.Size(35, 13);
             this.nplayers.TabIndex = 1;
             this.nplayers.Text = "label1";
+            // 
+            // totalplayers
+            // 
+            this.totalplayers.AutoSize = true;
+            this.totalplayers.Location = new System.Drawing.Point(169, 40);
+            this.totalplayers.Name = "totalplayers";
+            this.totalplayers.Size = new System.Drawing.Size(35, 13);
+            this.totalplayers.TabIndex = 2;
+            this.totalplayers.Text = "label1";
+            // 
+            // btnDiscordServer
+            // 
+            this.btnDiscordServer.Location = new System.Drawing.Point(73, 219);
+            this.btnDiscordServer.Name = "btnDiscordServer";
+            this.btnDiscordServer.Size = new System.Drawing.Size(160, 88);
+            this.btnDiscordServer.TabIndex = 3;
+            this.btnDiscordServer.Text = "Entrar";
+            this.btnDiscordServer.UseVisualStyleBackColor = true;
+            this.btnDiscordServer.Click += new System.EventHandler(this.btnDiscordServer_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDiscordServer);
+            this.Controls.Add(this.totalplayers);
             this.Controls.Add(this.nplayers);
             this.Controls.Add(this.btnEntrar);
             this.Name = "Main";
@@ -71,6 +94,8 @@ namespace FiveM_Launcher
 
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Label nplayers;
+        private System.Windows.Forms.Label totalplayers;
+        private System.Windows.Forms.Button btnDiscordServer;
     }
 }
 
