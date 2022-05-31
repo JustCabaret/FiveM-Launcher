@@ -47,10 +47,8 @@ namespace FiveM_Launcher
             //MessageBox.Show(result);
 
             var url = "https://servers-frontend.fivem.net/api/servers/single/kx5la6";
-
             var httpRequest = (HttpWebRequest)WebRequest.Create(url);
-            httpRequest.Headers.Add("admin", "admin");
-
+            httpRequest.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36";
             var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
