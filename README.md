@@ -12,7 +12,7 @@ A simple FiveM Server Launcher made in C#.
 
 
 
-### Features
+## Features
 - [x] Server Status
 - [x] Players Count
 - [x] Connect to the Server
@@ -20,5 +20,5 @@ A simple FiveM Server Launcher made in C#.
 - [x] Windows Notification before connecting to the Server
 
 
-### Upcoming
+## Upcoming
 - [ ] Launcher auto-update
