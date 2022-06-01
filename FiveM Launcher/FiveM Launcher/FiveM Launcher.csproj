@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Logo-PT-top.ico</ApplicationIcon>
+    <ApplicationIcon>logo-pt.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -98,11 +98,15 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\logo-redondo.png" />
     <Content Include="Images\logo-top.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Logo-PT-top.ico" />
-    <None Include="Resources\background.jpg" />
+    <Content Include="logo-pt.ico" />
+    <None Include="Resources\background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
