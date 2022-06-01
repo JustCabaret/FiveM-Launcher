@@ -138,7 +138,7 @@ namespace FiveM_Launcher
             } else
             {
                 label4.ForeColor = Color.Green;
-                label4.Text = "Online";
+                label4.Text = "Online11";
             }
         }
 
