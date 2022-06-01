@@ -36,19 +36,23 @@ namespace FiveM_Launcher
             this.btnDiscordServer = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEntrar
             // 
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(69)))), ((int)(((byte)(121)))));
+            this.btnEntrar.FlatAppearance.BorderSize = 0;
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar.ForeColor = System.Drawing.Color.White;
             this.btnEntrar.Location = new System.Drawing.Point(494, 164);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(219, 88);
             this.btnEntrar.TabIndex = 0;
             this.btnEntrar.Text = "Entrar no Servidor";
-            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // nplayers
@@ -71,13 +75,17 @@ namespace FiveM_Launcher
             // 
             // btnDiscordServer
             // 
+            this.btnDiscordServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(69)))), ((int)(((byte)(121)))));
+            this.btnDiscordServer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(69)))), ((int)(((byte)(121)))));
+            this.btnDiscordServer.FlatAppearance.BorderSize = 0;
             this.btnDiscordServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDiscordServer.Location = new System.Drawing.Point(494, 279);
+            this.btnDiscordServer.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDiscordServer.Location = new System.Drawing.Point(494, 283);
             this.btnDiscordServer.Name = "btnDiscordServer";
             this.btnDiscordServer.Size = new System.Drawing.Size(219, 88);
             this.btnDiscordServer.TabIndex = 3;
             this.btnDiscordServer.Text = "Abrir o Discord";
-            this.btnDiscordServer.UseVisualStyleBackColor = true;
+            this.btnDiscordServer.UseVisualStyleBackColor = false;
             this.btnDiscordServer.Click += new System.EventHandler(this.btnDiscordServer_Click);
             // 
             // pictureBox1
@@ -94,6 +102,7 @@ namespace FiveM_Launcher
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.totalplayers);
             this.panel1.Controls.Add(this.nplayers);
             this.panel1.Controls.Add(this.btnDiscordServer);
@@ -103,6 +112,14 @@ namespace FiveM_Launcher
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(818, 420);
             this.panel1.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(69)))), ((int)(((byte)(121)))));
+            this.panel2.Location = new System.Drawing.Point(389, 50);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(2, 321);
+            this.panel2.TabIndex = 5;
             // 
             // Main
             // 
@@ -133,6 +150,7 @@ namespace FiveM_Launcher
         private System.Windows.Forms.Button btnDiscordServer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

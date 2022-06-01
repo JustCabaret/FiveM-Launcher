@@ -37,10 +37,12 @@ namespace FiveM_Launcher
             {
                 loadData();
                 panel1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel1.Width, panel1.Height, 20, 20));
+                btnDiscordServer.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDiscordServer.Width, btnDiscordServer.Height, 20, 20));
+                btnEntrar.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnEntrar.Width, btnEntrar.Height, 20, 20));
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Há um problema na aplicação! Contacta um administrador!\nErro : " + ex);
+                MessageBox.Show("Há um problema no launcher! Contacta um administrador!\nErro : " + ex);
             }
         }
 
