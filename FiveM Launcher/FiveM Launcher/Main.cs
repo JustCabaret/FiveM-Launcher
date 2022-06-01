@@ -16,9 +16,9 @@ namespace FiveM_Launcher
         private static string fivemServer = "fivem://connect/cfx.re/join/b4opvp"; //Link do servidor FiveM
 
         private static string discordServer = "https://discord.gg/GWZsjkJ"; //Link do servidor Discord
-        private String players_ativo; //Número de Jogadores no momento
-
-        private String players_total; //Número de Jogadores no total
+        
+        private int players_ativo; //Número de Jogadores no momento
+        private int players_total; //Número de Jogadores no total
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -63,9 +63,9 @@ namespace FiveM_Launcher
                 Thread.Sleep(3000);
                 Close();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-
+                btnEntrar.Enabled = false;
                 MessageBox.Show("Não tens o FiveM instalado!");
             }
             
@@ -126,12 +126,12 @@ namespace FiveM_Launcher
 
             Servidor servidor = JsonConvert.DeserializeObject<Servidor>(result);
 
-            players_ativo = Convert.ToString(servidor.Data.clients);
-            players_total = Convert.ToString(servidor.Data.sv_maxclients);
+            players_ativo = servidor.Data.clients;
+            players_total = servidor.Data.sv_maxclients;
 
             label3.Text = "Jogadores : " + players_ativo + " / " + players_total;
 
-            if((Convert.ToInt32(players_ativo) == 0) || (players_ativo == null))
+            if((players_ativo == 0))
             {
                 label4.ForeColor = Color.Red;
                 label4.Text = "Offline";
